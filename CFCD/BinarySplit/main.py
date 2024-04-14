@@ -8,13 +8,13 @@ from convert_image import to_image
 
 if __name__ == '__main__':
     # 参数设置
-    path_gt = "D:\\Classification\\Paper_03_20220323\\Data\\Salinas\\Salinas.tif"  # 数据对应的真值文件
-    path = "D:\\Classification\\Paper_03_20220323\\Experiment-4"  # 数据保存的主干路径
-    samples_num = 15  # 未知类别的训练样本数据的个数
+    path_gt = "Data path"  # 数据对应的真值文件
+    path = "Save path"  # 数据保存的主干路径
+    samples_num = samples_num  # 未知类别的训练样本数据的个数
     factor = 1 * 1e-4  # 调制因子
-    batch_size = 8
+    batch_size = batch_size # 输入batch_size的大小
     learning_rate = 1 * 1e-2
-    epochs = 390  # 最大训练次数
+    epochs = 500  # 最大训练次数
     net_type = 'resnet18'  # 网络类型
     torch.cuda.manual_seed(29)  # 网络随机种子设置
     # 参数设置
