@@ -24,7 +24,6 @@ def training_sample_cluster(train_path, samples_num, splits_num):
         k_means_labels = k_means.predict(feature_list)
         cluster_id = label_set(k_means_labels, samples_num, train_path)
     else:
-        # 第二次及以上聚类
         path_feature = train_path + "\\feature.txt"  # 获取存放深度特征的文件路径
         all_features = []  # 存放txt中断所有特征
         if os.path.exists(path_feature):
