@@ -16,7 +16,7 @@ def train_valid(net_type, train_loader, val_loader, learning_rate, epochs, facto
     criterion = nn.CrossEntropyLoss()
     # 定义优化器
     optimizer = torch.optim.SGD(net_model.parameters(), learning_rate, momentum=0.9)
-    scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[150, 180, 210, 240], gamma=0.60)
+    scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[150, 180, 210, 240], gamma=0.50)
     accuracy = 0.0  # 保存精度
     cur_train_time = 0.0  # 统计当前分裂的训练时间
     # 保存训练模型
