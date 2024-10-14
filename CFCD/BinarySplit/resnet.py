@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torchvision import models
-from CAM import ChannelAttention
+from CBAM import ChannelAttention
 
 
 class base_resnet(nn.Module):
