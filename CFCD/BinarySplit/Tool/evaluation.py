@@ -11,7 +11,7 @@ save_path：评价结果保存路径
 
 
 def evaluation(list_true_label, list_pre_label, save_path):
-    cm = confusion_matrix(list_true_label, list_pre_label)  # 得到混淆矩阵
+    cm = confusion_matrix(list_true_label, list_pre_label)  # 混淆矩阵
     recall_class = []  # 存储每一类得召回率
     F1 = []  # 存储每一类的F1分数
     pre_class = []  # 存储的每一类精度
