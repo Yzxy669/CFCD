@@ -14,8 +14,8 @@ if __name__ == '__main__':
     factor = 1*1e-4  # 可根据具体数据调节大小
     batch_size = batch_size 
     learning_rate = 1 * 1e-2
-    epochs = 500  # 最大训练次数
-    net_type = 'resnet18'  # 网络类型
+    epochs = 500  
+    net_type = 'resnet18'  
     # 参数设置
     splits_num = 0  # 初始化分裂次数
     train_time = 0  # 计算训练的总时间
