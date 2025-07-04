@@ -11,8 +11,8 @@ if __name__ == '__main__':
     path_gt = "Data path"  # 数据对应的真值文件
     path = "Save path"  # 数据保存的主干路径
     samples_num = samples_num  # 未知类别的训练样本数据的个数
-    factor = 1*1e-4  # 调制因子 # 可根据具体数据调节大小
-    batch_size = batch_size # 输入batch_size的大小
+    factor = 1*1e-4  # 可根据具体数据调节大小
+    batch_size = batch_size 
     learning_rate = 1 * 1e-2
     epochs = 500  # 最大训练次数
     net_type = 'resnet18'  # 网络类型
